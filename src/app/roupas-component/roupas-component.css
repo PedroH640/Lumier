@@ -1,0 +1,74 @@
+:root {
+
+    --cor-1: #DEE4B8;
+    --cor-2: #F0FFCE;
+    --cor-3: #DECFA6;
+
+    --cor-4: #CB9F7D;
+    --cor-5: #A53F2B;
+    --cor-6: #79311B;
+
+    --cor-7: #4C230A;
+    --cor-8: #3A1207;
+    --cor-9: #280004;
+    --cor-10: #daa520;
+
+    /* Outras cores */
+    --cor-fundo:rgba(238, 220, 187);
+
+    /* Fontes */
+
+    --fonte-corpo:  "Oswald", sans-serif;
+    --fonte-titulo:  "Dosis", sans-serif;
+
+}
+.login-painel-esquerdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:   var(--cor-3);
+    border-radius: 16px;
+    border: solid 2px var(--cor-5);
+    padding: 20px;
+    max-width: 520px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+}
+
+.login-painel-esquerdo img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: solid 2px var(--cor-5);
+}
+
+.login-painel-esquerdo h2 {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #5a1a00;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+    
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--cor-6);
+    margin-top: 10px;
+    font-family: var(--fonte-titulo);
+}
+
+.cashback {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--cor-5);
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-top: 8px;
+    text-align: center;
+}

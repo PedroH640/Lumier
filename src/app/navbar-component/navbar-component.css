@@ -1,0 +1,70 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: var(--cor-6);
+    border-bottom: 5px solid var(--cor-5);
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;  
+    border: 3px solid var(--cor-5);
+    
+}
+
+
+.logo span {
+    color: var(--cor-5);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 1px;
+
+}
+
+.nav-lista {
+    display: flex;
+    gap: 26px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--cor-4);
+    transition: all ease 0.5s;
+}
+
+.nav-link:hover {
+    color: var(--cor-1);
+}
+
+.icone-usuario{
+    display: flex;
+    align-items: center;
+   font-size: 32px;
+    color: var(--cor-4);
+    transition: all ease 0.5s;
+    text-decoration: none;
+}
+
+.icone-usuario img{
+    height: 60px;        /* ← era 45px */
+    width: 60px;
+    min-width: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 2px solid var(--cor-4);
+    background-color: var(--cor-4);
+}
+
+.icone-usuario:hover {
+    color: var(--cor-1);
+}

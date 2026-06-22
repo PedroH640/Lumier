@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root {
+
+    --cor-1: #DEE4B8;
+    --cor-2: #F0FFCE;
+    --cor-3: #DECFA6;
+
+    --cor-4: #CB9F7D;
+    --cor-5: #A53F2B;
+    --cor-6: #79311B;
+
+    --cor-7: #4C230A;
+    --cor-8: #3A1207;
+    --cor-9: #280004;
+    --cor-10: #7c2e1f;
+
+    /* Outras cores */
+    --cor-fundo:rgba(238, 220, 187);
+
+    /* Fontes */
+    --fonte-titulo: "Dosis", sans-serif;
+    --fonte-corpo:  "Oswald", sans-serif;
+
+    /*================ . ========================================================================*/
+
+    --espcaco-xs: 4px;
+    --espcaco-sm: 8px;
+    --espcaco-md: 16px;
+    --espcaco-lg: 24px;
+    --espcaco-xl: 40px;
+    --espcaco-2x1: 60px;
+
+    --raio: 12px ;
+    --raio-sm: 8px ;
+    --raio-pill: 100px ;
+    --sombra-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --sombra-md: 0 4px 24px rgba(0, 0, 0, 0.10);
+    --sombra-lg: 0 12px 48px rgba(0, 0, 0, 0.14);
+
+    --transicao: 0.25s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(238, 220, 187);
+    color: var(--cor-6);
+    line-height: 1.6;
+    font-family: var(--fonte-corpo);
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
