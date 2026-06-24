@@ -11,3 +11,6 @@ import { NavbarComponent } from "./navbar-component/navbar-component";
 export class App {
   protected readonly title = signal('lumiere');
 }
+
+
+

@@ -1,13 +1,30 @@
 <header class="cabecalho">
-        <img src="logolumiere.png" alt="logo" class="logo">
+  <img src="logolumiere.png" alt="logo" class="logo" onclick="window.location.href='/inicio'" style="cursor: pointer;">
         
+  
             <nav class="navbar">
                 <ul class="nav-lista">
-                    <li><a href="#" class="nav-link">Inicio</a></li>
-                    <li><a href="#" class="nav-link">Categoria</a></li>
-                    <li><a href="#" class="nav-link">Sobre</a></li>
-                    <li><a href="#" class="nav-link">Ajuda</a></li>
+                    <li><a routerLink="/inicio" routerLinkActive="ativo" class="nav-link">Inicio</a></li>
+                    <li><a routerLink="/categorias" routerLinkActive="ativo" class="nav-link">Categoria</a></li>
+                    <li><a routerLink="/inicio"  fragment="sobre" class="nav-link">Sobre</a></li>
+                    <li><a routerLink="/inicio" fragment="ajuda" class="nav-link">Ajuda</a></li>
                 </ul>
+
+                <span class="carrinho">
+                <img src="/lumière9.9.png" routerLink="carrinho">
+            </span>
+                
               <nav class="icone-usuario">
-            <img src="usernofoto.png" alt="">
+            <img src="usernofoto.png" onclick="window.location.href='/perfil'">
+        
         </nav>
+
+
+        <!-- routerLink="/inicio fragment="sobre" (PARA SE LOCOMOVER NA MESMA PÁGINA)
+          <a routerlINK="/login" class="btn-sair">Login</a> 
+
+          ul class="nav lista"
+          nav-link ative
+          routerLinkActive="ativo"
+
+          -->

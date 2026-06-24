@@ -1,0 +1,88 @@
+<div id="app">
+  <header>
+    <div class="logo">🛍 Lumière</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar produtos...">
+      <button>Buscar</button>
+    </div>
+    <button class="cart-btn" onclick="switchTab('cart')">
+      🛒
+      <span class="cart-badge" id="cart-badge">0</span>
+    </button>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('products')">🏠 Início</button>
+    <button class="tab-btn" onclick="switchTab('cart')">🛒 Carrinho</button>
+  </div>
+
+  <div id="page-products" class="page active">
+    <p class="section-title" style="margin-top:8px">Coleção Lumière</p>
+    <div class="products-grid" id="products-grid"></div>
+  </div>
+
+  <div id="page-cart" class="page">
+    <div class="cart-header">
+      <h2>🛒 Meu Carrinho</h2>
+    </div>
+    <div id="cart-content"></div>
+  </div>
+
+  <div class="cart-footer" id="cart-footer" style="display:none">
+    <input type="checkbox" id="select-all-footer" onchange="toggleSelectAll(this.checked)">
+    <div class="cart-total">
+      <div class="cart-total-label">Total (<span id="selected-count">0</span> itens)</div>
+      <div class="cart-total-value" id="total-price">R$ 0,00</div>
+    </div>
+    <button class="checkout-btn" onclick="checkout()">Comprar</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-img" id="modal-img"></div>
+    <div class="modal-name" id="modal-name"></div>
+    <div class="modal-price" id="modal-price"></div>
+    <div class="modal-variants">
+      <label>Tamanho</label>
+      <div class="variant-options" id="size-opts">
+        <div class="variant-opt" onclick="selectVariant(this,'size')">P</div>
+        <div class="variant-opt selected" onclick="selectVariant(this,'size')">M</div>
+        <div class="variant-opt" onclick="selectVariant(this,'size')">G</div>
+        <div class="variant-opt" onclick="selectVariant(this,'size')">GG</div>
+      </div>
+    </div>
+    <div class="modal-variants">
+      <label>Cor</label>
+      <div class="variant-options" id="color-opts"></div>
+    </div>
+    <div class="modal-qty">
+      <label>Quantidade</label>
+      <div class="qty-control">
+        <button class="qty-btn" onclick="changeModalQty(-1)">−</button>
+        <input class="qty-num" id="modal-qty" type="number" value="1" min="1" max="99">
+        <button class="qty-btn" onclick="changeModalQty(1)">+</button>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-close-modal" onclick="closeModal()">Cancelar</button>
+      <button class="btn-add-modal" onclick="addToCartFromModal()">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="product-card">
+  <div class="product-img">
+    <img src="camisa02.png" alt="Camiseta Básica com Emblema">
+    <span class="cashback-badge">5% cashback</span>
+  </div>
+  <div class="product-info">
+    <div class="product-name">Camiseta Básica com Emblema</div>
+    <div class="product-price">R$ 49,90</div>
+    <div class="product-sold">⭐ 4.8 | 870 vendidos</div>
+    <button class="add-to-cart-btn" onclick="openModal(1)">+ Adicionar</button>
+  </div>
+</div>

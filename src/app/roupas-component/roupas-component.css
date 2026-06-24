@@ -22,37 +22,197 @@
     --fonte-titulo:  "Dosis", sans-serif;
 
 }
-.login-painel-esquerdo {
+    
+
+/* ====================== CAMISAs ========================================== */
+
+
+
+.container-camisas {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    flex-wrap: nowrap; /* impede quebrar linha */
+    padding: 40px;
+}
+
+.card-camisa {
+    width: 300px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:   var(--cor-3);
+    background-color: var(--cor-3);
+    border: 2px solid var(--cor-5);
     border-radius: 16px;
-    border: solid 2px var(--cor-5);
     padding: 20px;
-    max-width: 520px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    box-sizing: border-box;
+}
+
+.card-camisa img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--cor-5);
+}
+
+
+.container-camisas a {
+    display: block;
+    text-decoration: none;
     
 }
 
-.login-painel-esquerdo img {
+
+.slot1-camisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-3);
+    border: 2px solid var(--cor-5);
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.slot1-camisa img {
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
-    border: solid 2px var(--cor-5);
+    border: 2px solid var(--cor-5);
 }
 
-.login-painel-esquerdo h2 {
-    margin-top: 50px;
-    font-size: 20px;
+.slot1-camisa h2 {
+    margin-top: 20px;
     color: #5a1a00;
     font-weight: 900;
     text-align: center;
     line-height: 1.5;
     font-family: var(--fonte-titulo);
     font-size: 15px;
-    
 }
+
+.slot2-camisa {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-3);
+    border: 2px solid var(--cor-5);
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.slot2-camisa img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid var(--cor-5);
+}
+
+.slot2-camisa h2 {
+    display: grid;
+    margin-top: 20px;
+    color: #5a1a00;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+}
+
+.slot3-camisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-3);
+    border: 2px solid var(--cor-5);
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.slot3-camisa img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid var(--cor-5);
+}
+
+.slot3-camisa h2 {
+    margin-top: 20px;
+    color: #5a1a00;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+}
+
+.slot4-camisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-3);
+    border: 2px solid var(--cor-5);
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.slot4-camisa img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid var(--cor-5);
+}
+
+.slot4-camisa h2 {
+    margin-top: 20px;
+    color: #5a1a00;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+}
+
+.slot5-camisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-3);
+    border: 2px solid var(--cor-5);
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.slot5-camisa img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid var(--cor-5);
+}
+
+.slot5-camisa h2 {
+    margin-top: 20px;
+    color: #5a1a00;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+}
+
 
 .preco {
     font-size: 22px;
@@ -72,3 +232,40 @@
     margin-top: 8px;
     text-align: center;
 }
+
+
+.slot1-camisa,
+.slot2-camisa,
+.slot3-camisa,
+.slot4-camisa,
+.slot5-camisa {
+    width: 300px;
+    flex-shrink: 0; /* impede o card de encolher */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-3);
+    border: 2px solid var(--cor-5);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    box-sizing: border-box;
+}
+
+.slot1-camisa img,
+.slot2-camisa img,
+.slot3-camisa img,
+.slot4-camisa img,
+.slot5-camisa img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--cor-5);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+

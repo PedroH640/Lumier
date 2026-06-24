@@ -34,7 +34,7 @@
     display: flex;
     justify-content: flex-end; /* joga o card para a direita */
     align-items: center;
-    padding-right: 22%;
+    padding-right: 23.7%;
     padding-left: 40px;
 
 }
@@ -54,6 +54,7 @@
     width: 75%;
     max-width: 600px;
     background-color: var(--cor-4);
+    color: var(--cor-5);
     border: 1px solid var(--cor-7);
     border-radius: 15%;
     padding: 75px;
@@ -61,7 +62,7 @@
     animation: subirFadeIn .5s ease both;
     width: 100%;
     max-width: 500px;
-    background-color: var(--cor-f);
+    background-color: var(--cor-fundo);
     border: 1px solid var(--cor-7);
     border-radius: 40px;
     padding: 60px;
